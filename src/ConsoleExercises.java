@@ -3,18 +3,18 @@ import java.util.Scanner;
 public class ConsoleExercises {
     public static void main(String[] args) {
 //        int userInput;
-//        String wordOne;
-//        String wordTwo;
-//        String wordThree;
+        String wordOne;
+        String wordTwo;
+        String wordThree;
 //
 //
         Scanner sc = new Scanner(System.in);
 ////        System.out.print("Enter an integer ");
 //        System.out.print("Enter 3 words ");
-//        wordOne = sc.next();
-//        wordTwo = sc.next();
-//        wordThree = sc.next();
-////
+//        wordOne = sc.nextLine();
+//        wordTwo = sc.nextLine();
+//        wordThree = sc.nextLine();
+//////
 //        System.out.println("wordOne is \"" + wordOne + "\" <--");
 //        System.out.println("wordTwo is \"" + wordTwo + "\" <--");
 //        System.out.println("wordThree is \"" + wordThree + "\" <--");
@@ -28,7 +28,7 @@ public class ConsoleExercises {
 //
 //        System.out.println(mySentence);
 
-//        System.out.println("Enter length, width and height of the room:");
+        System.out.println("Enter length, width and height of the room:");
 
 //        int length;
 //        int width;
@@ -36,18 +36,17 @@ public class ConsoleExercises {
 //        length = sc.nextInt();
 //        width = sc.nextInt();
 
-//        float length;
-//        float width;
-//        float height;
-//
-//        length = sc.nextFloat();
-//        width = sc.nextFloat();
-//        height = sc.nextFloat();
-//
-//
-//        System.out.println("length = " + length);
-//        System.out.println("width = " + width);
-//        System.out.println("height = " + height);
+        float length;
+        float width;
+        float height;
+
+        length = Float.parseFloat(sc.nextLine());
+        width = Float.parseFloat(sc.nextLine());
+        height = Float.parseFloat(sc.nextLine());
+
+        System.out.println("length = " + length);
+        System.out.println("width = " + width);
+        System.out.println("height = " + height);
 //
 //
 //        System.out.println("area = " + length * width);
