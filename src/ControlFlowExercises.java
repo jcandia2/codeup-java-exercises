@@ -1,30 +1,55 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
-//        Fizzbuzz
+//        Display a table of powers.
 //
-//        One of the most common interview questions for entry-level programmers is the FizzBuzz test.
-//        Developed by Imran Ghory, the test is designed to test basic looping and conditional logic skills.
+//        Prompt the user to enter an integer.
+//        Display a table of squares and cubes from 1 to the value entered.
+//        Ask if the user wants to continue.
+//        Assume that the user will enter valid data.
+//        Only continue if the user agrees to.
+//        Example Output
 //
-//        Write a program that prints the numbers from 1 to 100.
-//        For multiples of three print “Fizz” instead of the number
-//        For the multiples of five print “Buzz”.
-//        For numbers which are multiples of both three and five print “FizzBuzz”.
+//
+//        What number would you like to go up to? 5
+//
+//        Here is your table!
+//
+//        number | squared | cubed
+//        ------ | ------- | -----
+//        1      | 1       | 1
+//        2      | 4       | 8
+//        3      | 9       | 27
+//        4      | 16      | 64
+//        5      | 25      | 125
 
 
-        int i;
+        int userInput;
 
-        for(i = 1; i <= 100; i++) {
-            if (i % 3 == 0 && i % 5 == 0) {
-                System.out.println("FizzBuzz");
-            } else if (i % 3 == 0){
-                System.out.println("Fizz");
-            } else if (i % 5 == 0) {
-                System.out.println("Buzz");
-            } else {
-                System.out.println(i);
-            }
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter an integer: ");
+        userInput = sc.nextInt();
+
+        System.out.println("number | squared | cubed");
+        System.out.println("------ | ------- | -----");
+
+        int squared, cubed;
+
+        for (int i = 1; i <= userInput; i++) {
+            squared = i * i;
+            cubed = i * i * i;
+            System.out.printf("%-7d| %-8d| %d\n", i, squared, cubed);
         }
+
+
+
+
+
+
+
 
 
     }
