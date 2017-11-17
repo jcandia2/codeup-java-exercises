@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class ControlFlowExercises {
     public static void main(String[] args) {
@@ -27,30 +27,28 @@ public class ControlFlowExercises {
 
 
         int userInput;
+        String userResponse;
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter an integer: ");
-        userInput = sc.nextInt();
 
-        System.out.println("number | squared | cubed");
-        System.out.println("------ | ------- | -----");
+        do {
+            System.out.print("Enter an integer: ");
+            userInput = sc.nextInt();
 
-        int squared, cubed;
+            System.out.println("number | squared | cubed");
+            System.out.println("------ | ------- | -----");
 
-        for (int i = 1; i <= userInput; i++) {
-            squared = i * i;
-            cubed = i * i * i;
-            System.out.printf("%-7d| %-8d| %d\n", i, squared, cubed);
-        }
+            int squared, cubed;
 
-
-
-
-
-
-
-
+            for (int i = 1; i <= userInput; i++) {
+                squared = i * i;
+                cubed = i * i * i;
+                System.out.printf("%-7d| %-8d| %d\n", i, squared, cubed);
+            }
+            System.out.println("Would you like to continue? y/n");
+            userResponse = sc.next();
+        } while(userResponse.equals("y"));
 
     }
 }
