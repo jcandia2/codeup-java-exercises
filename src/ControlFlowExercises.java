@@ -50,13 +50,13 @@ public class ControlFlowExercises {
 //        16
 //        256
 //        65536
-
-        long j = 2;
-
-        do {
-            System.out.println(j);
-            j *= j;
-        } while (j < 1000000);
+//
+//        long j = 2;
+//
+//        do {
+//            System.out.println(j);
+//            j *= j;
+//        } while (j < 1000000);
 
 //        c) For loop
 //        refactor the previous two exercises to use a for loop instead
@@ -74,14 +74,42 @@ public class ControlFlowExercises {
 //        16
 //        256
 //        65536
+//
+//        long i;
+//
+//        for (i = 2; i <= 1000000; i *= i) {
+//            System.out.println(i);
+//        }
 
-        long i;
-
-        for (i = 2; i <= 1000000; i *= i) {
-            System.out.println(i);
-        }
-
-//        Display a table of powers.
+//        2) Fizzbuzz
+//
+//        One of the most common interview questions for entry-level programmers is the FizzBuzz test.
+//        Developed by Imran Ghory, the test is designed to test basic looping and conditional logic skills.
+//
+//        Write a program that prints the numbers from 1 to 100.
+//        For multiples of three print “Fizz” instead of the number
+//        For the multiples of five print “Buzz”.
+//        For numbers which are multiples of both three and five print “FizzBuzz”.
+//
+//
+//        int i;
+//
+//        for(i = 1; i <= 100; i++) {
+//            if (i % 3 == 0 && i % 5 == 0) {
+//                System.out.println("FizzBuzz");
+//            } else if (i % 3 == 0){
+//                System.out.println("Fizz");
+//            } else if (i % 5 == 0) {
+//                System.out.println("Buzz");
+//            } else {
+//                System.out.println(i);
+//            }
+//        }
+//
+//
+//
+//
+////      3) Display a table of powers.
 //
 //        Prompt the user to enter an integer.
 //        Display a table of squares and cubes from 1 to the value entered.
@@ -129,7 +157,7 @@ public class ControlFlowExercises {
 //        } while(userResponse.equals("y"));
 
 
-//        Convert given number grades into letter grades.
+//        4) Convert given number grades into letter grades.
 //
 //                Prompt the user for a numerical grade from 0 to 100.
 //        Display the corresponding letter grade.
