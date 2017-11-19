@@ -51,12 +51,12 @@ public class ControlFlowExercises {
 //        256
 //        65536
 //
-//        long j = 2;
+//        long i = 2;
 //
 //        do {
-//            System.out.println(j);
-//            j *= j;
-//        } while (j < 1000000);
+//            System.out.println(i);
+//            i *= i;
+//        } while (i < 1000000);
 
 //        c) For loop
 //        refactor the previous two exercises to use a for loop instead
@@ -91,7 +91,7 @@ public class ControlFlowExercises {
 //        For the multiples of five print “Buzz”.
 //        For numbers which are multiples of both three and five print “FizzBuzz”.
 //
-//
+////
 //        int i;
 //
 //        for(i = 1; i <= 100; i++) {
@@ -138,23 +138,7 @@ public class ControlFlowExercises {
         Scanner sc = new Scanner(System.in);
 //
 //
-//        do {
-//            System.out.print("Enter an integer: ");
-//            userInput = sc.nextInt();
 //
-//            System.out.println("number | squared | cubed");
-//            System.out.println("------ | ------- | -----");
-//
-//            int squared, cubed;
-//
-//            for (int i = 1; i <= userInput; i++) {
-//                squared = i * i;
-//                cubed = i * i * i;
-//                System.out.printf("%-7d| %-8d| %d\n", i, squared, cubed);
-//            }
-//            System.out.println("Would you like to continue? y/n");
-//            userResponse = sc.next();
-//        } while(userResponse.equals("y"));
 
 
 //        4) Convert given number grades into letter grades.
