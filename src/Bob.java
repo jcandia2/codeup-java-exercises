@@ -20,12 +20,15 @@ public class Bob {
             Scanner sc = new Scanner(System.in);
 
             String input = sc.nextLine();
+            boolean isYelling = input.equals(input.toUpperCase());
 
-            if (input.indexOf("?") != -1) {
+            boolean didNotSayAnything = input.trim().isEmpty();
+
+            if (input.endsWith("?")) {
                 System.out.println("Sure.");
-            } else if (input.indexOf("!") != -1) {
+            } else if (didNotSayAnything) {
                 System.out.println("Whoa, chill out!");
-            } else if (input.toLowerCase().equals("bob")) {
+            } else if (isYelling) {
                 System.out.println("Fine. Be that way!");
             } else {
                 System.out.println("Whatever");

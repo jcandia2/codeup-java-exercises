@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class StringBonuses {
     public static void main(String[] args) {
 //        ================================= STRING BONUSES
@@ -12,6 +14,68 @@ public class StringBonuses {
 //        Example:
 //        input - 12/01/1999
 //        output - December 12, 1999
+
+        System.out.print("Enter a date in this forma MM/DD/YYYY: ");
+
+        Scanner sc = new Scanner(System.in);
+
+        String userInput = sc.next();
+
+        String monthInput = userInput.substring(0,userInput.indexOf("/"));
+
+        String dayInput = userInput.substring(userInput.indexOf("/")+1,userInput.lastIndexOf("/"));
+
+        String yearInput = userInput.substring(userInput.lastIndexOf("/")+1);
+
+        System.out.println(monthInput);
+        System.out.println(dayInput);
+        System.out.println(yearInput);
+
+        String monthName;
+
+        String color = "red";
+
+        switch (monthInput) {
+            case "01":
+                monthName = "January";
+                break;
+            case "02":
+                monthName = "February";
+                break;
+            case "03":
+                monthName = "March";
+                break;
+            case "04":
+                monthName = "April";
+                break;
+            case "05":
+                monthName = "May";
+                break;
+            case "06":
+                monthName = "June";
+                break;
+            case "07":
+                monthName = "July";
+                break;
+            case "08":
+                monthName = "August";
+                break;
+            case "09":
+                monthName = "September";
+                break;
+            case "10":
+                monthName = "October";
+                break;
+            case "11":
+                monthName = "November";
+                break;
+            case "12":
+                monthName = "December";
+                break;
+            default:
+                System.out.println("Color not found");
+        }
+
 
 
 
