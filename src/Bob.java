@@ -20,7 +20,9 @@ public class Bob {
             Scanner sc = new Scanner(System.in);
 
             String input = sc.nextLine();
-            boolean isYelling = input.equals(input.toUpperCase());
+
+//            isYelling is all upper case or ends with an !
+            boolean isYelling = input.equals(input.toUpperCase()) || input.endsWith("!");
 
             boolean didNotSayAnything = input.trim().isEmpty();
 
