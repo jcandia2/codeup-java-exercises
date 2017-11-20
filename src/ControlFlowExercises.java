@@ -17,7 +17,11 @@ public class ControlFlowExercises {
 //        int i = 5;
 //
 //        while (i <= 15) {
-//            System.out.printf("%d ",i);
+////            System.out.printf("%d ",i);
+////            or you can use print
+//            System.out.print(i);
+//            System.out.println(" "); //good idea to seperate your formatting to a different line
+//
 //            i++;
 //        }
 
@@ -105,8 +109,32 @@ public class ControlFlowExercises {
 //                System.out.println(i);
 //            }
 //        }
+//        check out Enterprise FizzBuzz
+
+//      Paul's solution - does not work for divisible by
+//        boolean flag = true;
 //
+//        for(int i=0;i<=100;i++){
+//            if(i%3==0){
+//                System.out.println("Fizz");
+//                flag=false;
+//            }
 //
+//            if(i%5==0){
+//                System.out.println("Buzz");
+//                flag=false;
+//            }
+//
+//            if (i % 15 == 0)
+//            {
+//                System.out.println("FizzBuzz");
+//            }
+//
+//            if (flag)
+//                System.out.println(i);
+//
+//            flag = true; }
+
 //
 //
 ////      3) Display a table of powers.
@@ -134,8 +162,24 @@ public class ControlFlowExercises {
 
 //        int userInput;
 //        String userResponse;
-//
+
         Scanner sc = new Scanner(System.in);
+//
+//
+//        do {
+//            System.out.print("Enter an integer: ");
+//            userInput = sc.nextInt();
+//
+//            System.out.println("number | squared | cubed");
+//            System.out.println("------ | ------- | -----");
+//
+//            for (int i = 1; i <= userInput; i++) {
+//                System.out.printf("%-7d| %-8d| %d%n", i, i*i, i*i*i);
+//            }
+//
+
+
+
 //
 //
 //
