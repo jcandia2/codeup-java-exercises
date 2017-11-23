@@ -33,25 +33,37 @@ public class MethodsExercises {
         String response = "y";
 
         while (response.equalsIgnoreCase("y")) {
-            System.out.print("Enter a number between 1 and 10: ");
-            int firstNumber = getInteger(1, 10);
-            System.out.println(factorial(firstNumber));
+            System.out.print("Enter a number between 1 and 20: ");
+            int firstNumber = getInteger(1, 20);
+            System.out.println(firstNumber + "! = " + factorialRecursion(firstNumber));
             System.out.println("Would you like to do another number? [y/n]");
             response = sc.nextLine();
         }
     }
 
+    public static long factorialRecursion(int number) {
+        if (number == 1) {
+            return 1;
+        } else
+            return number * factorialRecursion(number -1);
+    }
+
     public static String factorial(int number) {
+        //will calculate factorial for number entered - i.e 4!
+        //will build and return the following string
+        //4! = 1 x 2 x 3 x 4 = 24
+
         long result = 1;
         int i;
         String output = number + "! = ";
-        for (i = 1; i < number; i++) {
+        for (i = 1; i <= number; i++) {
             result *= i;
-            output += i + " x ";
+            if (i == number) { //if its the last number to multiplye output string leaves out the last "x"
+                output += i;
+            } else {
+                output += i + " x ";
+            }
         }
-
-        result *= i;
-        output += i;
 
         output += " = " + result;
         return output;
@@ -62,8 +74,8 @@ public class MethodsExercises {
         Scanner sc = new Scanner(System.in);
         int numberEntered = sc.nextInt();
         if (numberEntered < min || numberEntered > max) {
-            System.out.print("Please enter a number between 1 and 10: ");
-            return getInteger(1, 10);
+            System.out.print("Please enter a number between 1 and 20: ");
+            return getInteger(1, 20);
         } else
             return numberEntered;
     }
