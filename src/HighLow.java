@@ -4,7 +4,7 @@ public class HighLow {
     public static void main(String[] args) {
 
         int randomNumber = getRandom(1, 100);
-        System.out.println(randomNumber);
+//        System.out.println(randomNumber);
 
         int numberOfGuesses = 1;
         String playerName = getPlayerName();
