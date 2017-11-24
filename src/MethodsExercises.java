@@ -30,22 +30,46 @@ public class MethodsExercises {
 //
 //        System.out.println(firstNumber + " + " + secondNumber + " = " + firstNumber + secondNumber);
 
-        String response = "y";
+
+//******************* factorial
+//        String response = "y";
+//
+//        while (response.equalsIgnoreCase("y")) {
+//            System.out.print("Enter a number between 1 and 20: ");
+//            int firstNumber = getInteger(1, 20);
+//            System.out.println(firstNumber + "! = " + factorialRecursion(firstNumber));
+//            System.out.println("Would you like to do another number? [y/n]");
+//            response = sc.nextLine();
+//        }
+
+//**************** dice
+
+        System.out.print("Enter the number of sides on your dice: ");
+
+        int numberOfSides = sc.nextInt();
+
+        System.out.println("Would you like to roll the dice?");
+        String response = sc.next();
 
         while (response.equalsIgnoreCase("y")) {
-            System.out.print("Enter a number between 1 and 20: ");
-            int firstNumber = getInteger(1, 20);
-            System.out.println(firstNumber + "! = " + factorialRecursion(firstNumber));
-            System.out.println("Would you like to do another number? [y/n]");
-            response = sc.nextLine();
+            System.out.println("First die roll: " + rollDice(numberOfSides));
+            System.out.println("Second die roll: " + rollDice(numberOfSides));
+            System.out.println("Would you like to roll the dice again? [y/n]");
+            response = sc.next();
         }
+
+
+    }
+
+    public static int rollDice (int max) {
+        return (int) (Math.random() * max + 1);
     }
 
     public static long factorialRecursion(int number) {
         if (number == 1) {
             return 1;
         } else
-            return number * factorialRecursion(number -1);
+            return number * factorialRecursion(number - 1);
     }
 
     public static String factorial(int number) {
