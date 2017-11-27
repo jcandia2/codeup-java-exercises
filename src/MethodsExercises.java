@@ -5,6 +5,11 @@ public class MethodsExercises {
 
         Scanner sc = new Scanner(System.in);
 
+
+//        review Justin's solutions on github
+//        .hasNextInt is a boolean method you can use to check if your input is a character for example
+//        look for do while nested loops and single &
+
 //        System.out.print("Enter a number: ");
 //        double number1 = sc.nextDouble();
 //
@@ -61,7 +66,7 @@ public class MethodsExercises {
 
     }
 
-    public static int rollDice (int max) {
+    public static int rollDice(int max) {
         return (int) (Math.random() * max + 1);
     }
 
@@ -82,7 +87,7 @@ public class MethodsExercises {
         String output = number + "! = ";
         for (i = 1; i <= number; i++) {
             result *= i;
-            if (i == number) { //if its the last number to multiplye output string leaves out the last "x"
+            if (i == number) { //if its the last number to multiply output string leaves out the last "x"
                 output += i;
             } else {
                 output += i + " x ";
