@@ -5,8 +5,7 @@ public class InputTest {
 
         Input in = new Input();
 
-
-       // test for getString()
+        // test for getString()
 //        System.out.println("Enter data: ");
 //        String userInput = in.getString();
 //        System.out.println("User input is: " + userInput);
