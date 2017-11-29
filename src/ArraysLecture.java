@@ -89,11 +89,11 @@ public class ArraysLecture {
 
         // slide 6 and 7 (The Arrays Class) - static methods for common array manipulation
 
-            String[] testArray = new String[4];
+//            String[] testArray = new String[4];
 
         // Arrays.fill(arrayName, value) - fills all or a range of elements with a given value
 
-                Arrays.fill(testArray, "Badgers");
+//                Arrays.fill(testArray, "Badgers");
 
         // Arrays.toString(arrayName) - prints out a copy of the array contents
 
@@ -114,11 +114,11 @@ public class ArraysLecture {
 
         // Arrays.sort(array, startIndex, toIndex) - sorts array elements alphabetically/numerically 2nd and 3rd arguments are optional.
 
-            String[] meme = {"Badgers", "Mushroom", "Badgers", "Snake"};
-
-            System.out.println(Arrays.toString(meme));
-            Arrays.sort(meme); // this does change the original
-            System.out.println(Arrays.toString(meme));
+//            String[] meme = {"Badgers", "Mushroom", "Badgers", "Snake"};
+//
+//            System.out.println(Arrays.toString(meme));
+//            Arrays.sort(meme); // this does change the original
+//            System.out.println(Arrays.toString(meme));
 
 
         // Arrays.binarySearch(array, value) - returns the index of a value if in the array or -1 if not found
@@ -133,11 +133,11 @@ public class ArraysLecture {
 
         // slide 8 (Two-Dimensional Arrays) - an array of arrays, we use the double square brackets [][]
 
-        int[][] matrix = {
-                {1, 2, 3},      //
-                {4, 5, 6},
-                {7, 8, 9}
-        };
+//        int[][] matrix = {
+//                {1, 2, 3},
+//                {4, 5, 6},
+//                {7, 8, 9}
+//        };
 
 //                +---+----+--------+--------+
 //                | [0][0] | [0][1] | [0][2] |
@@ -148,15 +148,43 @@ public class ArraysLecture {
 //                +---+----+--------+--------+
 
 
-        for (int[] row : matrix) {
-            System.out.println("+---+---+---+");
-            System.out.print("| ");
-            for (int n : row) {
-                System.out.print(n + " | ");
-            }
-            System.out.println();
-        }
-        System.out.println("+---+---+---+");
+//        for (int[] row : matrix) {
+//            System.out.println("+---+---+---+");
+//            System.out.print("| ");
+//            for (int n : row) {
+//                System.out.print(n + " | ");
+//            }
+//            System.out.println();
+//        }
+//        System.out.println("+---+---+---+");
+
+//        *********** sorting arrays
+
+//        int[] my_array1 = {
+//                1789, 2035, 1899, 1456, 2013,
+//                1458, 2458, 1254, 1472, 2365,
+//                1456, 2165, 1457, 2456
+//        };
+//
+//        String[] my_array2 = {
+//                "Java",
+//                "Python",
+//                "PHP",
+//                "C#",
+//                "C Programming",
+//                "C++"
+//        };
+//
+//        System.out.println("original array is: " + Arrays.toString(my_array1));
+//        Arrays.sort(my_array1);
+//        System.out.println("sorted array is: " + Arrays.toString(my_array1));
+//
+//        System.out.println("original array is: " + Arrays.toString(my_array2));
+//        Arrays.sort(my_array2);
+//        System.out.println("sorted array is: " + Arrays.toString(my_array2));
+
+//
+
 
     }
 }

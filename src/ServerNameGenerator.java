@@ -24,7 +24,7 @@ public class ServerNameGenerator {
     }
 
     public static String getRandomWord(String[] array) {
-        int rnd = (int) Math.floor(Math.random() * array.length);
+        int rnd = (int) (Math.random() * array.length);
         return array[rnd];
     }
 }
