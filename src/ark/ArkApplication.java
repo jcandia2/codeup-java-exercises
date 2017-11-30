@@ -29,6 +29,10 @@ public class ArkApplication {
         }
 
         System.out.println("In total, we have " + Animal.getTotalNumberOfAnimals());
+
+        for (Animal animal: animals) {
+            System.out.println(animal.name + " " + animal.getNumberOfThisAnimal() + " " + animal.numberOfThisAnimal);
+        }
     }
 
 

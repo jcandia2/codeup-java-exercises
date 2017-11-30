@@ -1,15 +1,15 @@
 package ark;
 
 public class Animal {
-    private String kingdom = "animal";
+    public String kingdom = "animal";
     protected String name;
     protected String sound;
     protected static int totalNumberOfAnimals;
-    protected int numberOfThisAnimal;
+    public int numberOfThisAnimal;
 
     public Animal(String name) {
         this.name = name;
-        totalNumberOfAnimals++;
+        totalNumberOfAnimals++; //constructor adds 1 to totalNumberOfAnimals every time a new animal is created
     }
 
     public void soundOff() {
@@ -28,6 +28,7 @@ public class Animal {
         return sound;
     }
 
+    //static means an object doesn't have to be created for this method to be called
     public static int getTotalNumberOfAnimals() {
         return totalNumberOfAnimals;
     }
