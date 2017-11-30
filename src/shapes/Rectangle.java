@@ -1,26 +1,28 @@
 package shapes;
 
-public class Rectangle {
-//    we leave out static because we do need an object to use these properties
-    protected double length;
-    protected double width;
+public class Rectangle extends Quadrilateral implements Measurable {
 
-    public Rectangle() {
+    public Rectangle(double length, double width) {
+        super(length, width);
     }
 
-//    constructor - it's named the same as the class because it is constructing a class of this type
-//    this is also the return type for this method
-    public Rectangle(double length, double width) {
+    @Override
+    public void setLength(double length) {
         this.length = length;
+    }
+
+    @Override
+    public void setWidth(double width) {
         this.width = width;
     }
 
-//    these methods don't need parameters because the length and width properties are already defined in our object
-    public double getArea(){
-        return length * width;
+    @Override
+    public double getPerimeter() {
+        return 2*length + 2*width;
     }
 
-    public double getPerimeter(){
-        return 2 * length + 2 * width;
+    @Override
+    public double getArea() {
+        return length*width;
     }
 }
