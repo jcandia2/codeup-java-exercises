@@ -8,13 +8,13 @@ public class Input {
 
     // constructor
     public Input() {
-        sc = new Scanner(System.in);
+        sc = new Scanner(System.in).useDelimiter("\n");
         //or
 //        this.sc = new Scanner(System.in);
     }
 
     public String getString() {
-        return sc.nextLine();
+        return sc.next();
     }
 
     //return true if the user enters y, yes...return false otherwise

@@ -31,6 +31,8 @@ public class GradesApplication {
         student3.addGrade(70);
         student3.addGrade(90);
 
+
+//      putting key -> value pairs onto a HashMap
         students.put("bobsUserName", student1);
         students.put("juliesUserName", student2);
         students.put("billsUserName", student3);
@@ -38,7 +40,7 @@ public class GradesApplication {
 
         showMenu(students);
 
-        do {            //do while userResponse = y
+//        do {            //do while userResponse = y
             do {                //do while invalid userName entered
                 System.out.println("What student would you like to see more information on? (enter \"all\" to view all students)");
                 System.out.println();
@@ -58,8 +60,8 @@ public class GradesApplication {
                 System.out.print(">");
                 userResponse = input.yesNo();
                 input.getString();
-            } while (!validUserName && userResponse);
-        } while (userResponse);
+            } while (userResponse);
+//        } while (userResponse);
 
         System.out.println("Ok bye!");
     }
@@ -71,6 +73,12 @@ public class GradesApplication {
         for (String key : students.keySet()) {
             System.out.print("|" + key + "|  ");
         }
+
+//        another way to iterate a HashMap
+//        students.forEach((k, v) -> {
+//            System.out.println(k);
+//        });
+
         System.out.println();
         System.out.println();
     }

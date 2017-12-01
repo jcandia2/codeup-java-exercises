@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class Student {
 
-
+//we want to keep the name private so we don't have another piece of code changing the student's name
 private String name;
 private ArrayList<Integer> grades;
 
@@ -23,6 +23,7 @@ private ArrayList<Integer> grades;
     public void addGrade(int grade){
         grades.add(grade);
     }
+
     // returns the average of the students grades
     public double getGradeAverage(){
         int sum = 0;
