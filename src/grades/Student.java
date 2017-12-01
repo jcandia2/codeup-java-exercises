@@ -32,4 +32,11 @@ private ArrayList<Integer> grades;
         return sum/grades.size();
 
     }
+
+    public void getGrades(){
+        for (int grade: grades) {
+            System.out.print(grade + " ");
+        }
+        System.out.println();
+    }
 }
