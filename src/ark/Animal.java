@@ -5,11 +5,12 @@ public class Animal {
     protected String name;
     protected String sound;
     protected static int totalNumberOfAnimals;
-    public int numberOfThisAnimal;
+    protected int numberOfThisAnimal;
 
     public Animal(String name) {
         this.name = name;
         totalNumberOfAnimals++; //constructor adds 1 to totalNumberOfAnimals every time a new animal is created
+        numberOfThisAnimal++;
     }
 
     public void soundOff() {

@@ -5,6 +5,7 @@ package ark;
  */
 public class Cat extends Animal {
 
+
     public Cat() {
         super("cat");
         sound = "meow, meow...";

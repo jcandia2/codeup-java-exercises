@@ -5,6 +5,7 @@ package ark;
  */
 public class Unicorn extends Animal {
 
+
     public Unicorn() {
         super("unicorn");
         numberOfThisAnimal++;
