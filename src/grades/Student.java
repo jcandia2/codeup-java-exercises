@@ -1,6 +1,7 @@
 package grades;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Student {
 
@@ -33,10 +34,11 @@ private ArrayList<Integer> grades;
 
     }
 
-    public void getGrades(){
-        for (int grade: grades) {
-            System.out.print(grade + " ");
-        }
-        System.out.println();
+    public String getGrades(){
+//        for (int grade: grades) {
+//            System.out.print(grade + " ");
+//        }
+            return grades.toString().replaceAll("\\[|\\]", "");
+//        System.out.println();
     }
 }
