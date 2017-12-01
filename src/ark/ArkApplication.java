@@ -25,9 +25,9 @@ public class ArkApplication {
         // now for the 12th animal, the user gets to decide!
 //        animals[11] = getAnimalFromUser();
         animals.add(getAnimalFromUser());
-        animals.add(getAnimalFromUser());
-        animals.add(getAnimalFromUser());
-        animals.add(getAnimalFromUser());
+//        animals.add(getAnimalFromUser());
+//        animals.add(getAnimalFromUser());
+//        animals.add(getAnimalFromUser());
 
         showAllAnimals(animals);
     }
@@ -41,9 +41,12 @@ public static void showAllAnimals(ArrayList<Animal> animals) {
 
         System.out.println("In total, we have " + Animal.getTotalNumberOfAnimals());
 
+    System.out.println(animals.get(0).getName() + " and " + animals.get(0).getNumberOfThisAnimal());
+
+
         for (Animal animal: animals) {
-//            System.out.println(animal.name + " " + animal.getNumberOfThisAnimal() + " " + animal.numberOfThisAnimal);
-            System.out.println(animals.get(0).getName() + " and " + animals.get(0).getNumberOfThisAnimal());
+            System.out.println(animal.name + " " + animal.getNumberOfThisAnimal() + " " + animal.numberOfThisAnimal);
+//            System.out.println(animals.get(0).getName() + " and " + animals.get(0).getNumberOfThisAnimal());
 
         }
     }

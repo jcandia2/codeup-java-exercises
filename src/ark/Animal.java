@@ -5,7 +5,7 @@ public class Animal {
     protected String name;
     protected String sound;
     protected static int totalNumberOfAnimals;
-    protected int numberOfThisAnimal;
+    protected static int numberOfThisAnimal;
 
     public Animal(String name) {
         this.name = name;
@@ -34,7 +34,7 @@ public class Animal {
         return totalNumberOfAnimals;
     }
 
-    public int getNumberOfThisAnimal() {
+    public static int getNumberOfThisAnimal() {
         return numberOfThisAnimal;
     }
 }
