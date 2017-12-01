@@ -30,10 +30,9 @@ public class ArrayListDemo {
             System.out.println(person.getName());
         }
 
-//        i don't have the class of Car defined
-//        ArrayList<Car> cars = new ArrayList<>();
-//        cars.add(new Car("toyota", "mr2"));
-//        cars.add(new Car("volkswagen", "bug"));
+        ArrayList<Car> cars = new ArrayList<>();
+        cars.add(new Car("toyota", "mr2"));
+        cars.add(new Car("volkswagen", "bug"));
 
         ArrayList<Quadrilateral> shapes = new ArrayList<>();
         shapes.add(new Square(5));
