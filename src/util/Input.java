@@ -19,9 +19,12 @@ public class Input {
 
     //return true if the user enters y, yes...return false otherwise
     public boolean yesNo() {
-        String userChoice = sc.next();
-        return userChoice.equalsIgnoreCase("y") || userChoice.equalsIgnoreCase("yes");
-
+        String input = sc.next();
+        if(input.equalsIgnoreCase("y") || input.equalsIgnoreCase("yes")) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public int getInt() {

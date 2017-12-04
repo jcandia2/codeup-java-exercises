@@ -40,7 +40,7 @@ public class GradesApplication {
 
         showMenu(students);
 
-//        do {            //do while userResponse = y
+        do {            //do while userResponse = y
             do {                //do while invalid userName entered
                 System.out.println("What student would you like to see more information on? (enter \"all\" to view all students)");
                 System.out.println();
@@ -59,9 +59,9 @@ public class GradesApplication {
                 System.out.println();
                 System.out.print(">");
                 userResponse = input.yesNo();
-                input.getString();
-            } while (userResponse);
-//        } while (userResponse);
+//                input.getString();
+            } while (!validUserName && userResponse);
+        } while (userResponse);
 
         System.out.println("Ok bye!");
     }
