@@ -40,8 +40,7 @@ public class GradesApplication {
 
         showMenu(students);
 
-        do {            //do while userResponse = y
-            do {                //do while invalid userName entered
+            do {
                 System.out.println("What student would you like to see more information on? (enter \"all\" to view all students)");
                 System.out.println();
                 System.out.print(">");
@@ -53,15 +52,12 @@ public class GradesApplication {
                 } else {
                     System.out.println("Sorry, no student found with the github username of " + userInput);
                     System.out.println();
-                    validUserName = false;
                 }
                 System.out.println("Would you like to see another student?");
                 System.out.println();
                 System.out.print(">");
-                userResponse = input.yesNo();
-//                input.getString();
-            } while (!validUserName && userResponse);
-        } while (userResponse);
+
+            } while (input.yesNo("Do you want to continue? y/n")); //use your .yesNo method inside your while conditional
 
         System.out.println("Ok bye!");
     }
